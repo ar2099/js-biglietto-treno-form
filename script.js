@@ -8,7 +8,7 @@
 
 let costoKm = 0.21;
 
-let eta = prompt("inserisci l'età");
+let eta = document.getElementById("inputEta");
 
 let km = prompt("Quanti km devi percorrere?");
 

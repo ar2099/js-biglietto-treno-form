@@ -10,28 +10,44 @@
 </head>
 
 <body>
+    
+    <div class="generale">
 
-    <div>
-        <span>Età: </span>
-        <span class="risultato" id="vEta"></span>
+        <div class="sottoparte">
+            <h2>CALCOLA IL PREZZO DEL BIGLIETTO</h2>
+            <div class="riquadro">
+               
+                    <div class="r1">
+                        <span>Nome Cognome</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="r1">
+                        <span>Km da percorrere</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="r1">
+                        <span>Età</span>
+                        <select >
+                            <option value="volvo">Minorenne</option>
+                            <option value="saab">Maggiorenne</option>
+                            <option value="fiat">+65</option>
+                        </select>
+                    </div>
+                    
+                    <span class="bottone">Genera</span>
+                    <span class="bottone">Annulla</span>
+            </div>
+
+        </div>
+
+        <div class="sottoparte">
+        <H2>IL TUO BIGLIETTO</H2>
+        <div class="riquadro"></div>
+        </div>
+
     </div>
-
-    <div>
-        <span>Chilometri da percorrere: </span>
-        <span id="vKm" class="risultato"></span>
-    </div>
-
-    <div>
-        <span>Costo del biglietto: </span>
-        <span id="vBiglietto" class="risultato"></span>
-    </div>
-
-    <div>
-        <span id="vFrase"></span>
-    </div>
-
-    <script src="script.js"></script>
-
 
 </body>
 
