@@ -19,6 +19,40 @@ bottone.addEventListener("click",
         let codice = Math.floor(Math.random() * 100) + 9000;
         console.log(codice)
         let codiceVista = document.getElementById("codice").innerHTML = codice;
+
+        let km = document.getElementById("km");
+        let kmVista = km.value;
+        kmVista = Number(kmVista);
+        console.log(kmVista)
+
+        let eta = document.getElementById("eta");
+        let etaVista = eta.value;
+        console.log(etaVista)
+
+        let variabileEta;
+
+        if (etaVista == "Minorenne") {
+            variabileEta = 0.8;
+            document.getElementById("vFrase").innerHTML = "Scontato del 20%.";
+
+        } else if (etaVista == "+65") {
+            variabileEta = 0.6;
+            document.getElementById("vFrase").innerHTML = "Scontato del 40%.";
+
+        } else {
+            variabileEta = 1;
+            document.getElementById("vFrase").innerHTML = "Nessuna offerta";
+        }
+
+        let costoKm = 0.21;
+
+        let costoBiglietto = costoKm * kmVista * variabileEta;
+
+        console.log(costoBiglietto)
+
+        let costoBigliettoArrotondato = (Math.round(costoBiglietto * 10) / 10)
+
+        document.getElementById("vBiglietto").innerHTML = ` ${costoBigliettoArrotondato} ${"€."} `;
         
     }
 
