@@ -4,12 +4,23 @@ let nome = document.getElementById("inputnomecognome");
 
 let vistaNome = document.getElementById("nome2");
 
+let annulla = document.getElementById("annulla")
 
+annulla.addEventListener("click",
+
+function() {
+    let riquadroMagico = document.getElementById("sottoparte2");
+    riquadroMagico.classList.add("sparita")
+}
+)
 
 bottone.addEventListener("click",
 
     function () {
         
+
+        let riquadroMagico = document.getElementById("sottoparte2");
+        riquadroMagico.classList.remove("sparita")
         vistaNome.innerHTML = nome.value ;
 
         let carrozza = Math.floor(Math.random() * 6) + 1;
