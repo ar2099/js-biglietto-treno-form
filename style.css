@@ -53,6 +53,8 @@ h2 {
   flex-wrap: wrap;
 }
 
+
+
 .r1 {
   display: flex;
   flex-direction: column ;
@@ -80,4 +82,53 @@ h2 {
   color: white;
   text-align: center;
   background-color: blue;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+.riquadro-risultati {
+  width: 95%;
+  height: 65%;
+  background-color: rgb(23, 206, 54);
+}
+
+.riquadro-nome {
+  height: 100%;
+  background-color: grey;
+  width: 30%;
+  float: left;
+
+}
+
+#nome2 {
+  font-size: 1.3em;
+  font-weight: bolder;
+  
+}
+
+.riquadro-biglietto {
+  float: left;
+  height: 100%;
+  width: 70%;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+}
+
+.contenitore {
+  height: 80%;
+  border-right: 2px solid yellow;
+  border-left: 2px solid green;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titolo-contenitore {
+  font-weight: bolder;
 }

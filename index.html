@@ -19,7 +19,7 @@
                
                     <div class="r1">
                         <span>Nome Cognome</span>
-                        <input type="text">
+                        <input type="text" id="inputnomecognome">
                     </div>
 
                     <div class="r1">
@@ -30,13 +30,13 @@
                     <div class="r1">
                         <span>Età</span>
                         <select >
-                            <option value="volvo">Minorenne</option>
-                            <option value="saab">Maggiorenne</option>
-                            <option value="fiat">+65</option>
+                            <option value="Minorenne">Minorenne</option>
+                            <option value="Maggiorenne">Maggiorenne</option>
+                            <option value="+65">+65</option>
                         </select>
                     </div>
                     
-                    <span class="bottone">Genera</span>
+                    <span class="bottone" id="invia">Genera</span>
                     <span class="bottone">Annulla</span>
             </div>
 
@@ -44,11 +44,42 @@
 
         <div class="sottoparte">
         <H2>IL TUO BIGLIETTO</H2>
-        <div class="riquadro"></div>
+        <div class="riquadro">
+            <h3>DETTAGLIO PASSEGERI</h3>
+            <div class="riquadro-risultati clearfix">
+                <div class="riquadro-nome">
+                <h3>NOME PASSEGERO</h3>
+                    <p id="nome2"></p>
+                </div>
+                <div class="riquadro-biglietto">
+                   <div class="contenitore">
+                    <span class="titolo-contenitore">Offerta</span>
+                    <span class="imput-contenitore"></span>
+                   </div>
+
+                <div class="contenitore">
+                    <span class="titolo-contenitore">Carrozza</span>
+                    <span class="imput-contenitore"></span>
+                </div>
+
+                <div class="contenitore">
+                    <span class="titolo-contenitore">Codice CPP</span>
+                    <span class="imput-contenitore"></span>
+                </div>
+
+                <div class="contenitore">
+                    <span class="titolo-contenitore">Costo biglietto</span>
+                    <span class="imput-contenitore"></span>
+                </div>
+                </div>
+            </div>
+        </div>
         </div>
 
     </div>
 
+
+    <script src="script.js"></script>
 </body>
 
 </html>
